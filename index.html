@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sujal Kushwaha | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio for Sujal Kushwaha, a Computer Science undergraduate building full-stack web applications with AI-powered features."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="portfolio-window">
+        <header class="top-bar">
+          <div class="top-bar__profile">
+            <div class="avatar-mark" aria-hidden="true">SK</div>
+            <div class="profile-copy">
+              <strong id="profile-name"></strong>
+              <span id="profile-status"></span>
+            </div>
+          </div>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+          >
+            Menu
+          </button>
+
+          <nav class="top-nav" id="site-nav" aria-label="Primary navigation"></nav>
+
+          <div class="top-actions">
+            <div class="top-socials" id="top-socials" aria-label="Social links"></div>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
+              <span class="theme-toggle__icon" id="theme-toggle-icon" aria-hidden="true"></span>
+              <span class="theme-toggle__label" id="theme-toggle-label">Light Mode</span>
+            </button>
+            <a class="top-cta" href="#contact">Get in touch</a>
+          </div>
+        </header>
+
+        <main class="portfolio-canvas">
+          <section class="hero section" id="home">
+            <div class="hero-copy" data-reveal>
+              <p class="eyebrow" id="hero-eyebrow"></p>
+              <h1 class="hero-title" id="hero-title"></h1>
+              <p class="hero-intro" id="hero-intro"></p>
+              <div class="hero-actions" id="hero-actions"></div>
+              <div class="hero-pills" id="hero-pills"></div>
+            </div>
+
+            <aside class="hero-card" data-reveal>
+              <p class="card-kicker">Portfolio Overview</p>
+              <h2 id="hero-card-title"></h2>
+              <div class="hero-card__facts" id="hero-card-facts"></div>
+              <div class="hero-card__links" id="hero-card-links"></div>
+            </aside>
+          </section>
+
+          <section class="section section--projects" id="projects">
+            <div class="section-heading" data-reveal>
+              <p class="section-kicker">Portfolio Showcase</p>
+              <h2>Selected full-stack projects built around real product ideas and practical workflows.</h2>
+            </div>
+
+            <div class="projects-grid" id="projects-grid"></div>
+          </section>
+
+          <section class="section section--story" id="about">
+            <div class="story-grid">
+              <article class="story-card story-card--about" id="about-card" data-reveal></article>
+              <article class="story-card story-card--education" id="education-card" data-reveal></article>
+              <article class="story-card story-card--certificates" id="certificates-card" data-reveal></article>
+            </div>
+          </section>
+
+          <section class="section section--skills" id="skills">
+            <div class="section-heading" data-reveal>
+              <p class="section-kicker">Technical Stack</p>
+              <h2>Languages, frameworks, backend tools, and subjects that shape how I build.</h2>
+            </div>
+
+            <div class="skills-grid" id="skills-grid"></div>
+          </section>
+
+          <section class="section section--resume" id="resume">
+            <div class="resume-shell" data-reveal>
+              <div class="resume-copy">
+                <p class="section-kicker">Resume</p>
+                <h2>Download my latest resume for projects, internships, and role applications.</h2>
+                <p>
+                  This portfolio is based on the same resume content, and you can download the PDF directly here.
+                </p>
+              </div>
+
+              <div class="resume-actions">
+                <a class="resume-button" href="./Resume.pdf" download="Sujal-Kushwaha-Resume.pdf">
+                  Download Resume
+                </a>
+                <a
+                  class="resume-button resume-button--secondary"
+                  href="./Resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View Resume
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section class="section section--contact" id="contact">
+            <div class="contact-shell" data-reveal>
+              <div class="contact-copy">
+                <p class="section-kicker">Contact</p>
+                <h2 id="contact-title"></h2>
+                <p id="contact-blurb"></p>
+              </div>
+
+              <div class="contact-links" id="contact-links"></div>
+            </div>
+          </section>
+        </main>
+
+        <footer class="site-footer">
+          <p>
+            <span id="footer-year"></span>
+            <span id="footer-copy"></span>
+          </p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

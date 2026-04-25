@@ -751,8 +751,7 @@ html[data-theme='light'] .certificate-item span {
   color: rgba(46, 36, 67, 0.72);
 }
 
-html[data-theme='light'] .project-bullets,
-html[data-theme='light'] .profile-copy span {
+html[data-theme='light'] .project-bullets {
   color: rgba(33, 26, 47, 0.78);
 }
 
@@ -923,6 +922,10 @@ html[data-theme='light'] .contact-link__icon {
   line-height: 1.2;
 }
 
+html[data-theme='light'] .skill-chip__label {
+  color: rgba(22, 15, 35, 0.88);
+}
+
 .resume-shell {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
@@ -1039,6 +1042,10 @@ html[data-theme='light'] .project-button,
 html[data-theme='light'] .project-badge,
 html[data-theme='light'] .resume-button {
   color: #fff;
+}
+
+html[data-theme='light'] .resume-button--secondary {
+  color: var(--white);
 }
 
 .js [data-reveal] {
